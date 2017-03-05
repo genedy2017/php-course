@@ -1,0 +1,17 @@
+http://pastebin.com/kCAavhT9
+
+Install xampp
+Install eclipse
+Test that PHP is working
+
+Create a form containing 
+a text box for name, 
+text box for email, 
+drop down of city, 
+radio buttons for gender, 
+multiple choice list for hobbies, and 
+check box for "send me updates by mail". 
+
+On submitting the form, the next page 
+should display the user-provided data 
+formatted as an HTML table.
