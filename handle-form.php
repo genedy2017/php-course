@@ -11,9 +11,9 @@ $hobbies = [
 
 if(isset($_POST['submit'])){
 	// process form
-	echo '<pre>';
-	print_r($_POST);
-	echo '</pre>';
+	//echo '<pre>';
+	//print_r($_POST);
+	//echo '</pre>';
 	
 	// receive data
 	$name = trim(isset($_POST['name']) ? $_POST['name'] : '');
@@ -24,6 +24,7 @@ if(isset($_POST['submit'])){
 	$errors = [];
 	if(!preg_match('/^[a-z-\' ]{2,30}$/i', $name)){
 		$errors[] = 'Error in name';
+		$name = '';
 	}
 	
 	if(!is_array($user_hobbies) || !count($user_hobbies)){
@@ -36,11 +37,12 @@ if(isset($_POST['submit'])){
 	}
 	
 	if(count($errors)){
-		echo 'Error: <pre>';
-		print_r($errors);
-		echo '</pre>';
-		
-		echo load_view('./views/form.php', ['hobbies' => $hobbies]);
+		echo load_view('./views/errors.php', ['errors' => $errors]);
+		echo load_view('./views/form.php', [
+				'hobbies' => $hobbies, 
+				'name' => $name,
+				'user_hobbies' => $user_hobbies
+		]);
 		exit;
 	}
 	
@@ -48,7 +50,9 @@ if(isset($_POST['submit'])){
 	
 }else{
 	$form = load_view('./views/form.php', [
-			'hobbies' => $hobbies
+			'hobbies' => $hobbies,
+			'name' => '',
+			'user_hobbies' => []
 	]);
 	
 	echo $form;
