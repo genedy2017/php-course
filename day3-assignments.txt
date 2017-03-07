@@ -1,0 +1,20 @@
+Assignment: 
+	write a function to add corresponding values 
+	from 2 arrays and return an array containing 
+	added functions: 
+	function add_arrays($array1, $array2)
+	
+Assignment: 
+	write a function that tests the above function: 
+	it calls add_arrays with 2 arrays: [3,5,10,1] 
+	and [2, 8, -2, 0] and makes sure the returned 
+	array is [5, 13, 8, 1]
+	
+Assignment: 
+	Use the PHP reference (and/or Google) to find 
+	out how to: find the user IP, find the user 
+	browser, determine the version of PHP installed 
+	on the server, find the date a file on the 
+	server was modified, list the files in a folder 
+	on the server
+	
