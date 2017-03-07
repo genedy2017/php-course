@@ -1,0 +1,4 @@
+Homework:
+* Difference between === and ==
+* Difference between null, false, 0, '' (empty string)
+* strpos(): how to use it correctly?
