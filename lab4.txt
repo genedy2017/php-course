@@ -1,3 +1,12 @@
 1. populate students table with 300 random names and emails and DOBS
 2. display list of students, 25 at a time, with pagination.
 3. allow searching by student email.
+
+
+
+<a href="students.php?page=<?php echo $data['page'] + 100; ?>">Next page</a>
+
+
+$page = isset($_GET['page']) ? $_GET['page'] : 0;
+
+select * from students limit $page, 100

@@ -51,4 +51,19 @@ function get_username(){
 	return $username;
 }
 
-
+function db_connect(){
+	static $link;
+	if(isset($link)) return $link;
+	
+	include('./config.php');
+	// $host, $user, $pass, $db
+	
+	// step 1 & 2: connect to server and select db
+	$link = @mysqli_connect($host, $user, $pass, $db);
+	if(!$link){
+		echo mysqli_connect_error();
+		die;
+	}
+	
+	return $link;
+}
