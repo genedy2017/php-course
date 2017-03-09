@@ -1,5 +1,8 @@
 <?php
 
+include_once('./HTMLElement.php');
+include_once('./Form.php');
+
 function get_random_string($length){
 	$a = "abcdefghijklmksjfhscrh3498324734";
 

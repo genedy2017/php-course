@@ -11,7 +11,7 @@
 		$dob = isset($_POST['dob']) ? $_POST['dob'] : '';
 		
 		// validate data
-		// TODO: lab assignment
+		// TODO: validate and escape quotes
 		
 		// process data
 		$insert = "insert into students set
