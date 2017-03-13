@@ -6,7 +6,8 @@ implement a login form with Google reCaptcha 2
 
 
 
-
+Project details:
+http://bit.ly/2nlre5f
 
 
 
