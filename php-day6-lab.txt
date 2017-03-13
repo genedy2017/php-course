@@ -1,0 +1,12 @@
+Ajax: ability to add and remove symbols from page
+
+function to check user login and redirect to login page
+
+implement a login form with Google reCaptcha 2
+
+
+
+
+
+
+
